@@ -29,7 +29,7 @@ export default function ProviderButton({
 				<Button
 					key={name}
 					/* eslint-disable-next-line @typescript-eslint/no-misused-promises */
-					onClick={async (): Promise<undefined> => await signOut({ callbackUrl: callback })}>
+					onClick={async (): Promise<undefined> => await signOut()}>
 					Sign out
 				</Button>
 			)}

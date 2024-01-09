@@ -8,9 +8,9 @@ import { RecoilRoot } from "recoil";
 export default function NextAuthProvider({ children }: { children: React.ReactNode }): React.JSX.Element {
 	return (
 		<SessionProvider>
-			<ThemeProvider attribute="class">
-				<RecoilRoot>{children}</RecoilRoot>
-			</ThemeProvider>
+			<RecoilRoot>
+				<ThemeProvider attribute={"class"}>{children}</ThemeProvider>
+			</RecoilRoot>
 		</SessionProvider>
 	);
 }

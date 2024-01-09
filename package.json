@@ -1,7 +1,7 @@
 {
-	"name": "social-media-clone",
+	"name": "nextjs-template",
 	"version": "1.0.0",
-	"description": "An social media clone.",
+	"description": "Template for next.js projects",
 	"main": "src/index.ts",
 	"rootDir": "src",
 	"scripts": {
@@ -65,7 +65,7 @@
 		"clsx": "^1.2.1",
 		"lucide-react": "^0.259.0",
 		"next": "^13.4.4",
-		"next-auth": "^4.24.5",
+		"next-auth": "^4.22.3",
 		"next-themes": "^0.2.1",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
