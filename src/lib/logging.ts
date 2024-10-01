@@ -1,18 +1,18 @@
-import process from "node:process";
+import process from "node:process"
 
-import * as fs from "fs";
-import * as path from "path";
-import * as winston from "winston";
+import * as fs from "fs"
+import * as path from "path"
+import * as winston from "winston"
 
 export class Logger {
-	public logger: winston.Logger;
+	public logger: winston.Logger
 	constructor(
 		private readonly name: string,
 		private readonly _dirname: string = path.join(process.cwd(), "logs")
 	) {
-		fs.mkdirSync(this._dirname, { recursive: true });
-		const date = new Date();
-		const dateString = `${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}`;
+		fs.mkdirSync(this._dirname, { recursive: true })
+		const date = new Date()
+		const dateString = `${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}`
 		this.logger = winston.createLogger({
 			format: winston.format.combine(
 				winston.format.colorize(),
@@ -27,11 +27,11 @@ export class Logger {
 					filename: `${this._dirname}/${dateString}.log`,
 				}),
 			],
-		});
-		module.exports = this.logger;
+		})
+		module.exports = this.logger
 	}
 
 	public info(message: string): void {
-		this.logger.info(message);
+		this.logger.info(message)
 	}
 }

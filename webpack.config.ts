@@ -1,4 +1,4 @@
-import * as path from "path";
+import * as path from "path"
 
 module.exports = {
 	target: "node",
@@ -22,4 +22,4 @@ module.exports = {
 			},
 		],
 	},
-};
+}
