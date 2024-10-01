@@ -23,29 +23,29 @@ repos:
           - id: prettier
             name: format
             pass_filenames: false
-            entry: npm run prettier:fix
+            entry: yarn run prettier:fix
             language: node
 
           - id: eslint
             name: lint
             pass_filenames: false
-            entry: npm run lint:fix
+            entry: yarn run lint:fix
             language: node
 
           - id: next
             name: build
             pass_filenames: false
-            entry: npm run build
+            entry: yarn run build
             language: node
 
           - id: mocha
             name: test
             pass_filenames: false
-            entry: npm run test
+            entry: yarn run test
             language: node
 
           - id: nyc
             name: coverage
             pass_filenames: false
-            entry: npm run coverage
+            entry: yarn run coverage
             language: node

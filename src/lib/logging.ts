@@ -6,7 +6,10 @@ import * as winston from "winston";
 
 export class Logger {
 	public logger: winston.Logger;
-	constructor(private readonly name: string, private readonly _dirname: string = path.join(process.cwd(), "logs")) {
+	constructor(
+		private readonly name: string,
+		private readonly _dirname: string = path.join(process.cwd(), "logs")
+	) {
 		fs.mkdirSync(this._dirname, { recursive: true });
 		const date = new Date();
 		const dateString = `${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}`;

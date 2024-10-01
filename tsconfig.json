@@ -35,6 +35,6 @@
 			"@tests/*": ["./tests/*"]
 		}
 	},
-	"include": ["src/**/*", "tests/**/*", "dist/types/**/*.ts"],
+	"include": ["src/**/*", "tests/**/*", "dist/types/**/*.ts", "eslint.config.mjs"],
 	"exclude": ["node_modules", "dist", "types"]
 }
